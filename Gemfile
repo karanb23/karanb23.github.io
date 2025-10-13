@@ -1,25 +1,16 @@
 source "https://rubygems.org"
 
-# Jekyll version
-gem "jekyll", "~> 4.3.3"
+# Use GitHub Pages gem for compatibility
+gem "github-pages", group: :jekyll_plugins
 
-# Minima theme
-gem "minima", "~> 2.5"
-
-# Jekyll plugins
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-seo-tag", "~> 2.8"
-end
+# If you want to use GitHub Pages without additional plugins,
+# the github-pages gem includes Jekyll, Minima theme, and common plugins
 
 # Windows and JRuby does not include zoneinfo files
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", ":~> 1.2"
+  gem "tzinfo", "~> 1.2"
   gem "tzinfo-data"
 end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
-
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds
-gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
