@@ -49,17 +49,3 @@ Contact
 -------
 
 - GitHub: https://github.com/karanb23
-
-License
--------
-
-MIT — see LICENSE for details.
-
----
-
-If you'd like, I can also:
-- Add a demo screenshot or badges
-- Detect whether the site uses Jekyll and add a tailored setup section
-- Create a CONTRIBUTING.md and ISSUE_TEMPLATE
-
-Please tell me which of those you'd like next.
